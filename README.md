@@ -1,1 +1,2 @@
-# ec2_terra_jen
+# Provision an ec2 instance within VPC, subnet
+# Tools: Terraform, Jenkins
