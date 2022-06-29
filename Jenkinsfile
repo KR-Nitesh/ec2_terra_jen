@@ -15,8 +15,10 @@ pipeline{
         }
         stage ('setup environment'){
             steps {
-                terraform init
-                terraform apply --auto-approve
+                sh'''
+                    terraform init
+                    terraform apply --auto-approve
+                '''
             }
         }
     }
