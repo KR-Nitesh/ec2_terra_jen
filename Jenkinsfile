@@ -10,7 +10,7 @@ pipeline{
     stages{
         stage ('checkout'){
             steps{
-                git(url: 'https://github.com/KR-Nitesh/ec2_terra_jen.git')
+                git branch: 'main', url:'https://github.com/KR-Nitesh/ec2_terra_jen.git'
             }
         }
         stage ('setup environment'){
